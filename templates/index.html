@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./static/lib/css//bootstrap.min.css">
+  <link rel="stylesheet" href="./static/lib/css/keen-dashboards.css">
+  <!--
+  <link rel="stylesheet" href="./static/lib/css/dc.css">
+  -->
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/dc/1.7.5/dc.min.css">
+  <link rel="stylesheet" href="./static/css/custom.css">
+  <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"/>
+
+
+</head>
+<body class="application">
+
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./">Kaggle TalkingData Interactive Visualization</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="col-sm-6">
+        <div class="row">
+
+          <!-- Time Chart --> 
+          <div class="col-sm-12">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Number of Records
+              </div>
+              <div class="chart-stage">
+                <div id="time-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Time Chart --> 
+
+          <!-- Brand -->
+          <div class="col-sm-6">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Brand
+              </div>
+              <div class="chart-stage">
+                <div id="phone-brand-row-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Brand -->
+
+
+          <div class="col-sm-6">
+
+            <div class="row">
+            <!-- Gender -->
+            <div class="col-sm-12">
+              <div class="chart-wrapper">
+                <div class="chart-title">
+                  Gender
+                </div>
+                <div class="chart-stage">
+                  <div id="gender-row-chart"></div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <!-- Gender -->
+
+            <!-- Age Segment -->
+            <div class="row">
+            <div class="col-sm-12">
+              <div class="chart-wrapper">
+                <div class="chart-title">
+                  Age Segment
+                </div>
+                <div class="chart-stage">
+                  <div id="age-segment-row-chart"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Age Segment -->
+          </div>
+          </div>
+
+
+        </div>
+      </div>
+
+
+      <div class="col-sm-2">
+        <div class="row">
+
+          <!-- Location -->  
+          <div class="col-sm-12">
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Location
+              </div>
+              <div class="chart-stage">
+                <div id="location-row-chart"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Location -->  
+        </div>
+      </div>
+
+
+
+      <div class="col-sm-4">
+
+        <div class="row">
+          <!-- Map -->  
+          <div class="col-sm-12"> 
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Map
+              </div>
+              <div class="chart-stage">
+                <div id="map" style="width: 400px; height: 380px"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Map -->  
+        </div>
+
+        <div class="row">
+          <!-- Number of events -->  
+          <div class="col-sm-12"> 
+            <div class="chart-wrapper">
+              <div class="chart-title">
+                Number of Events
+              </div>
+              <div class="chart-stage">
+                <div id="number-records-nd"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Number of events -->  
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <hr>
+  <p class="small text-muted">Built with &#9829; by <a href="https://keen.io">Keen IO</a></p>
+
+  <script src="./static/lib/js/jquery.min.js"></script>
+  <script src="./static/lib/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+  <script src="./static/lib/js/crossfilter.js"></script>
+  <script src="./static/lib/js/d3.min.js"></script>
+  <!--
+  <script src="./static/lib/js/dc.js"></script>
+  -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/dc/1.7.5/dc.min.js"></script>
+  <script src="./static/lib/js/queue.js"></script>
+
+  <script src="./static/lib/js/keen.min.js"></script>
+  <script src='./static/js/graphs.js' type='text/javascript'></script>
+
+  <script src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script>
+  <script src="http://leaflet.github.io/Leaflet.heat/dist/leaflet-heat.js"></script>
+
+</body>
+</html>
