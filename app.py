@@ -8,7 +8,7 @@ from flask import render_template
 import json
 
 
-data_path = '../input/'
+data_path = './input/'
 n_samples = 30000
 
 def get_age_segment(age):

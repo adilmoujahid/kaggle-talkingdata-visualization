@@ -34,7 +34,6 @@ function makeGraphs(error, recordsJson) {
 	var ageSegmentGroup = ageSegmentDim.group();
 	var phoneBrandGroup = phoneBrandDim.group();
 	var locationGroup = locationdDim.group();
-
 	var all = ndx.groupAll();
 
 
@@ -44,12 +43,13 @@ function makeGraphs(error, recordsJson) {
 
 
     //Charts
+    var numberRecordsND = dc.numberDisplay("#number-records-nd");
 	var timeChart = dc.barChart("#time-chart");
 	var genderChart = dc.rowChart("#gender-row-chart");
 	var ageSegmentChart = dc.rowChart("#age-segment-row-chart");
 	var phoneBrandChart = dc.rowChart("#phone-brand-row-chart");
 	var locationChart = dc.rowChart("#location-row-chart");
-	var numberRecordsND = dc.numberDisplay("#number-records-nd");
+
 
 
 	numberRecordsND
