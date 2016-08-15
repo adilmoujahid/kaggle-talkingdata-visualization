@@ -19,9 +19,9 @@ def get_age_segment(age):
     elif age <= 28:
         return '27-28'
     elif age <= 32:
-        return '29-31'
+        return '29-32'
     elif age <= 38:
-        return '32-38'
+        return '33-38'
     else:
         return '39+'
 
